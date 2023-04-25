@@ -1,6 +1,7 @@
 package ru.netology.controller;
 
 import com.google.gson.Gson;
+import org.springframework.stereotype.Controller;
 import ru.netology.model.Post;
 import ru.netology.service.PostService;
 
@@ -12,6 +13,7 @@ public class PostController {
   public static final String APPLICATION_JSON = "application/json";
   private final Gson gson = new Gson();
   private final PostService service;
+
 
   public PostController(PostService service) {
     this.service = service;
